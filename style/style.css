@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@500&family=Work+Sans:wght@700&display=swap');
+
+body{
+  font-family: 'Work Sans', sans-serif;
+
+  }
+.container{
+  margin: 50px 150px;
+}
+
+/* .banner{
+  background-color: solid rgba(255, 144, 14, 0.1);
+
+} */
+.header{
+  display:flex;
+  justify-content: space-between;
+}
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav li a{
+  padding: 10px;
+  text-decoration: none;
+}
+/*........ 
+header end
+........... */
+.banner-title{
+  text-align:center;
+  justify-content:center;
+}
+
+.banner-title h1{
+  /* display:flex; */
+  
+  font-size:64px;
+  Line height: 75px;
+  
+}
+.btn-banner{
+  color:#fff;
+  background-color:#FF900E;
+  padding:10px 20px;
+  border:none;
+  border-radius:5px;
+}
+
+
+.banner-title img{
+  margin-top:50px;
+}
+
+/* ...........................
+        Quick Features list 
+..............................*/
+.feature-container{
+  display:flex;
+}
+
+.img-container{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap: 10px;
+  width:50%;
+}
+
+.img-container img{
+  width :100%;
+}
+
+.feature{
+  width:50%;
+  display:flex;
+  align-items:center;
+  margin-left:5%;
+ 
+}
+
+#feature-h1{
+  color:gray;
+}
+#feature-h2{
+  color:orange;
+}
+
+/* .....................................................................                       Small Divice 
+.....................................................................*/
+@media screen and (max-width:576px) {
+  .container{
+    margin:20px auto;
+  }
+  
+  .header, .navbar{
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+  }
+  .banner-title h1{
+    font-size:20px;
+    ma
+  }
+}
+/*.......................... 
+   Quick Features list
+.............................  */
+
+/*.....................................................................
+                         Medium Divice 
+.....................................................................*/
+@media screen and (min-width:577px) and (max-width:991px){
+  .container{
+    margin:50px 50px;
+  }
+  
+  .header, .navbar{
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+  }
+  .banner-title h1{
+    font-size:30px;
+  
+  }
+}
